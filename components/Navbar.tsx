@@ -36,8 +36,8 @@ const Navbar: React.FC<INavbarProps> = () => {
                                 <div className="absolute pb-16 w-28 border-white border-b-8 flex justify-center rounded-lg opacity-40 hidden lg:flex" />
                             </div>
                             :
-                            <Link href="/">
-                                Home
+                            <Link href="/Design">
+                                Design
                             </Link>}
 
 
