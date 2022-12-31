@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 export interface IDesignThumbProps {
     data: any
@@ -8,8 +9,8 @@ const DesignThumb: React.FC<IDesignThumbProps> = ({data}) => {
 
     return (
         <>
-            <div className="aspect-w-16 aspect-h-12 w-full h-full">
-                <img src={data.url} className="object-cover hover:cursor-pointer hover:bg-black" />
+            <div className="relative aspect-w-16 aspect-h-12 w-full h-full">
+                <Image src={data.url} fill cover alt="something"  className="object-cover hover:cursor-pointer hover:bg-black" />
                 <div
                     className="h-auto w-auto opacity-0 flex items-center justify-center flex-col hover:cursor-pointer hover:opacity-100 hover:bg-black hover:bg-opacity-70">
                     <div
